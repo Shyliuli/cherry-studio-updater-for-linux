@@ -9,7 +9,7 @@
 chmod +x /path/to/cherry_update
 ```
 After that, just run cherry_update in the terminal
-
+- Oh, by the way, you might also need to create a desktop file (I believe you can find out how to do it, so I won't go into detail).
 
 ## zh_CN:
 
@@ -22,3 +22,4 @@ After that, just run cherry_update in the terminal
 chmod +x /path/to/cherry_update
 ```
 之后只需要在终端运行cherry_update即可
+- 奥，对了，你可能还需要做一个desktop文件(相信你能搜索到怎么做，就不写了)
