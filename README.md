@@ -1,17 +1,33 @@
+## English:
 
-## zh_CN:
-### cherry-studio-updater-for-linux
-- cherry-studio updater for linux cherry-studio linux client update script
-- Originally for personal use, thought it would be convenient for everyone, so I put it out
+
+### Cherry Studio Updater for Linux
+- Cherry Studio updater for Linux, Cherry Studio Linux client update script
+- Originally for personal use, now shared to make it easier for everyone
 #### How to Use
-- Open the cherry_update script, write your proxy address (if needed), configure other variables as needed, save to any PATH directory (such as /usr/bin), and run
+- Open the cherry_update script, enter your proxy address (if needed), configure other variables according to your requirements, save it to any PATH directory (for example, /usr/bin), then run
 ```
 chmod +x /path/to/cherry_update
 ```
 After that, just run cherry_update in the terminal
-- Oh, by the way, you might also need to create a desktop file (I believe you can find out how to do it, so I won't go into detail).
+- Oh, right, you might also need to create a desktop file
+```
+Desktop Entry
+Categories=Development;
+Exec=/opt/cherry/cherry-studio.appimage
+Icon=cherry-studio
+Cherry Studio
+false
+Application
+```
+Note: you need to place the icon file cherry-studio.png into
+```
+/usr/share/icons/hicolor/48x48/apps/cherry-studio.png
+```
+For compatibility, I suggest you place the icons in 16x16, 32x32, 64x64, 128x128, and 256x256 folders and scale them to the appropriate sizes.
+Of course, if you want to save effort, you can also place them directly in /usr/share/pixmaps/ and then hope the desktop scales them correctly
 
-## zh_CN:
+## Chinese:
 
 ### cherry-studio-updater-for-linux
 - cherry-studio updater for linux cherry-studio linux客户端更新脚本
@@ -22,4 +38,19 @@ After that, just run cherry_update in the terminal
 chmod +x /path/to/cherry_update
 ```
 之后只需要在终端运行cherry_update即可
-- 奥，对了，你可能还需要做一个desktop文件(相信你能搜索到怎么做，就不写了)
+- 奥，对了，你可能还需要做一个desktop文件
+```
+[Desktop Entry]
+Categories=Development;
+Exec=/opt/cherry/cherry-studio.appimage
+Icon=cherry-studio
+Name=Cherry Studio
+Terminal=false
+Type=Application
+```
+注意：你需要将图标文件cherry-studio.png放到
+```
+/usr/share/icons/hicolor/48x48/apps/cherry-studio.png
+```
+为了兼容性，我建议你同时放16x16，32x32，64x64，128x128，256x256下面并缩放到对应大小
+当然如果你想省事，也可以直接放到/usr/share/pixmaps/ 然后期待桌面能正确缩放   
